@@ -4,8 +4,8 @@ import { createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 import { toastWindowError } from 'components/Helpers';
 
-axios.defaults.baseURL = 'http://localhost:4000/api';
-// axios.defaults.baseURL = 'https://guess-the-number-api.onrender.com/api';
+// axios.defaults.baseURL = 'http://localhost:4000/api';
+axios.defaults.baseURL = 'https://guess-the-number-api.onrender.com/api';
 
 export const startGame = createAsyncThunk('main/startGame', async (status, thunkAPI) => {
 	try {
